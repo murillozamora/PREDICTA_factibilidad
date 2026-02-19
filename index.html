@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Carta de factibilidad – ÓOAD</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<div class="contenedor">
+  <h1>Carta de factibilidad</h1>
+
+  <form id="carta-form">
+    <div class="carta">
+
+      <!-- LUGAR Y FECHA -->
+      <p class="encabezado">
+        <span class="pantalla azul">
+          <input type="text" id="lugar" placeholder="Colima, Col." required>
+        </span>
+        <span class="impresion" id="lugar_impreso"></span>,
+        a
+        <span class="pantalla azul">
+          <input type="date" id="fecha" required>
+        </span>
+        <span class="impresion" id="fecha_impresa"></span>
+      </p>
+
+      <p>
+        Comité Nacional de Investigación Científica<br>
+        Instituto Mexicano del Seguro Social<br>
+        Presente.
+      </p>
+
+      <p><strong>ASUNTO: Carta de factibilidad</strong></p>
+
+      <p>
+        Por medio de la presente, la Coordinación de Información y Análisis Estratégico (CIAE) de la
+        Oficina de Operación Administrativa Desconcentrada
+
+        <span class="pantalla azul">
+          <select id="ooad" required>
+            <option value="">Selecciona tu ÓOAD</option>
+            <option value="Aguascalientes">Aguascalientes</option>
+            <option value="Baja California">Baja California</option>
+            <option value="Baja California Sur">Baja California Sur</option>
+            <option value="Campeche">Campeche</option>
+            <option value="Chiapas">Chiapas</option>
+            <option value="Chihuahua">Chihuahua</option>
+            <option value="Ciudad de México Norte">Ciudad de México Norte</option>
+            <option value="Ciudad de México Sur">Ciudad de México Sur</option>
+            <option value="Coahuila">Coahuila</option>
+            <option value="Colima">Colima</option>
+            <option value="Durango">Durango</option>
+            <option value="Guanajuato">Guanajuato</option>
+            <option value="Guerrero">Guerrero</option>
+            <option value="Hidalgo">Hidalgo</option>
+            <option value="Jalisco">Jalisco</option>
+            <option value="México Oriente">México Oriente</option>
+            <option value="México Poniente">México Poniente</option>
+            <option value="Michoacán">Michoacán</option>
+            <option value="Morelos">Morelos</option>
+            <option value="Nayarit">Nayarit</option>
+            <option value="Nuevo León">Nuevo León</option>
+            <option value="Oaxaca">Oaxaca</option>
+            <option value="Puebla">Puebla</option>
+            <option value="Querétaro">Querétaro</option>
+            <option value="Quintana Roo">Quintana Roo</option>
+            <option value="San Luis Potosí">San Luis Potosí</option>
+            <option value="Sinaloa">Sinaloa</option>
+            <option value="Sonora">Sonora</option>
+            <option value="Tabasco">Tabasco</option>
+            <option value="Tamaulipas">Tamaulipas</option>
+            <option value="Tlaxcala">Tlaxcala</option>
+            <option value="Veracruz Norte">Veracruz Norte</option>
+            <option value="Veracruz Sur">Veracruz Sur</option>
+            <option value="Yucatán">Yucatán</option>
+            <option value="Zacatecas">Zacatecas</option>
+          </select>
+        </span>
+
+        <span class="impresion" id="ooad_impreso"></span>
+
+        hace constar que, tras revisar los objetivos, alcances y requerimientos operativos del proyecto:
+      </p>
+
+      <p class="proyecto">
+        “Aplicación de herramientas computacionales para la vigilancia del control tensional en el primer nivel de atención”,
+      </p>
+
+      <p>
+        se determina que existe factibilidad técnica, operativa y administrativa para la participación de esta ÓOAD en el estudio.
+        El proyecto tiene como Investigador Responsable al Dr. Efrén Murillo Zamora, Investigador de Tiempo Completo con Matrícula 99063197.
+      </p>
+
+      <p>
+        En apego al diseño muestral propuesto, esta Oficina autoriza la inclusión de
+
+        <span class="pantalla azul">
+          <span id="num_umf_num"></span>
+          <span id="num_umf_letra" class="entre-parentesis"></span>
+        </span>
+
+        <span class="impresion" id="umf_impreso"></span>
+
+        Unidades de Medicina Familiar (UMF). Dichas unidades cuentan con la capacidad operativa para aportar la información
+        institucional requerida a través de los sistemas SIAIS y RLC-SIAS, conforme a la normatividad vigente.
+      </p>
+
+      <p>
+        Se hace constar que la obtención y extracción de los datos no se realizará en las UMF, sino desde la Unidad sede del
+        proyecto, la Unidad de Investigación en Epidemiología Clínica (UIEC) Colima, utilizando exclusivamente equipo y la red
+        institucional del IMSS.
+      </p>
+
+      <p>
+        Asimismo, se confirma que la extracción de información únicamente se llevará a cabo una vez que el Comité Nacional de
+        Investigación Científica emita la autorización correspondiente, en estricto cumplimiento de los lineamientos
+        institucionales de confidencialidad, seguridad y protección de datos.
+      </p>
+
+      <p>
+        Sin otro particular, se extiende la presente para los fines administrativos y de investigación que correspondan.
+      </p>
+
+      <div class="firma-bloque">
+        <p>Atentamente,</p>
+
+        <div class="linea-firma"></div>
+
+        <p class="nombre-firma">
+          <span class="pantalla azul">
+            <input type="text" id="titular" placeholder="Nombre del/de la Titular de la CIAE" required>
+          </span>
+          <span class="impresion" id="titular_impreso"></span>
+          <br>
+          Coordinación de Información y Análisis Estratégico<br>
+          ÓOAD <span id="ooad-texto">[Seleccionar ÓOAD]</span><br>
+          Instituto Mexicano del Seguro Social
+        </p>
+      </div>
+
+    </div>
+
+    <div class="controles pantalla">
+      <button type="button" onclick="generarPDF()">Generar PDF</button>
+    </div>
+  </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

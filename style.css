@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 20px;
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.contenedor {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.carta {
+  background-color: #ffffff;
+  padding: 30px 40px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 4px rgba(0,0,0,0.1);
+  font-size: 14px;
+}
+
+.encabezado {
+  text-align: right;
+}
+
+.proyecto {
+  font-style: italic;
+}
+
+.azul {
+  color: #004b8d;
+  font-weight: 600;
+}
+
+/* CAMPOS EDITABLES CON RECUADRO */
+input,
+select {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  padding: 4px 6px;
+  border: 1px solid #004b8d;
+  border-radius: 4px;
+  background: #ffffff;
+}
+
+.entre-parentesis {
+  margin-left: 4px;
+}
+
+/* ELEMENTOS DE IMPRESIÓN */
+.impresion {
+  display: none;
+}
+
+/* FIRMA */
+.firma-bloque {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.linea-firma {
+  width: 260px;
+  border-bottom: 1px solid #000;
+  margin: 30px auto 5px auto;
+}
+
+.nombre-firma {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+/* BOTÓN */
+.controles {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.controles button {
+  padding: 10px 18px;
+  background-color: #004b8d;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.controles button:hover {
+  background-color: #00325f;
+}
+
+/* ------------------------------ */
+/*   ESTILO PARA IMPRESIÓN (PDF) */
+/* ------------------------------ */
+@media print {
+
+  @page {
+    size: letter;
+    margin: 2.8cm 2.5cm;
+  }
+
+  body {
+    background: #ffffff !important;
+    font-family: "Montserrat", sans-serif !important;
+    font-size: 12pt !important;
+    line-height: 1.5 !important;
+    padding: 0 !important;
+  }
+
+  .carta {
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+  }
+
+  /* OCULTAR TODO LO DE PANTALLA */
+  .pantalla {
+    display: none !important;
+  }
+
+  /* MOSTRAR SOLO TEXTO PLANO */
+  .impresion {
+    display: inline !important;
+  }
+
+  .azul {
+    color: #000 !important;
+    font-weight: 500 !important;
+  }
+
+  .linea-firma {
+    border-bottom: 1px solid #000 !important;
+  }
+}
